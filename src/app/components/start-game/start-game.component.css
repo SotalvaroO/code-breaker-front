@@ -1,0 +1,38 @@
+.contg {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.startButton {
+  top: 150px;
+  margin: 0 auto;
+  margin-top: 20%;
+  text-align: center;
+  width: 400px;
+  height: 60px;
+  position: relative;
+  background-color: black;
+  border-style: solid;
+  border-color: lime;
+  z-index: 9;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.gameStart {
+  align-items: center;
+  font-size: 200%;
+  text-align: center;
+  color: aliceblue;
+  font-family: Consolas, Courier, monospace;
+  font-size: 20px;
+}
