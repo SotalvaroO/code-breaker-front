@@ -9,6 +9,9 @@ import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, Valida
 })
 export class PlayGameComponent implements OnInit {
   public response;
+  public list = "";
+  // public listNumber = "";
+  // public listAnswer = "";
 
   gameForm: FormGroup;
 
@@ -28,7 +31,10 @@ export class PlayGameComponent implements OnInit {
   public playGame() {
     this.codeService.playCodeBreaker(this.gameForm.value.number).subscribe((game) => {
       this.response = game.result;
-      console.log(this.response);
+      this.list = this.list + this.gameForm.value.number + game.result + "\n";
+      // this.listNumber = this.listNumber + `<br/>` + this.gameForm.value.number;
+      // this.listAnswer = this.listAnswer + "\n" + game.result;
+      //console.log(this.response);
     });
   }
 }
